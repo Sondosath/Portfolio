@@ -1,0 +1,34 @@
+.CardContiner {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center; /* Center the cards in the row */
+    gap: 20px; /* Add spacing between cards */
+    flex-wrap: wrap; /* Ensure responsiveness: cards wrap to a new row if the viewport is too small */
+}
+
+.ExperienceCard {
+    background-color: #FBB4A5;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px; /* Fixed width for consistent card size */
+    height: auto; /* Let the height adjust dynamically based on content */
+    padding: 20px;
+    text-align: center;
+    flex: 0 0 auto; /* Prevent shrinking */
+}
+
+.ExperienceCard > div > img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
